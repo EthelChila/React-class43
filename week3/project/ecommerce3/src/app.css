@@ -1,0 +1,161 @@
+body {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+}
+
+.categories-item {
+  background-color: #efeff0;
+  cursor: pointer;
+  font-weight: 700;
+  margin: 2px;
+  padding: 12px;
+  margin-bottom: 50px;
+}
+
+.categories-item:hover {
+  background-color: #d6d6d8;
+}
+
+.categories-item-selected {
+  background-color: #bdbdc1;
+}
+
+@media (max-width: 400px) {
+  .categories {
+    flex-direction: column;
+    text-align: center;
+  }
+  .categories-item {
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+  }
+}
+
+.products {
+  list-style: none;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px 30px;
+}
+
+.products-item {
+  margin: 8px;
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  cursor: pointer;
+}
+
+.product-image {
+  margin-bottom: auto;
+  margin-top: auto;
+  max-height: 300px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.fav-image {
+  display: block;
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+}
+
+.product-title {
+  overflow: hidden;
+  padding-top: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  color: red;
+}
+
+.prodcut-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prodcut-details-image {
+  max-height: 500px;
+}
+
+.prodcut-details-description {
+  text-align: center;
+  width: 80%;
+  padding: 20px;
+  font-size: 20px;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px 30px;
+  list-style: none;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+
+.products-item {
+  margin: 8px;
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-image {
+  margin-bottom: auto;
+  margin-top: auto;
+  max-height: 300px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.product-title {
+  overflow: hidden;
+  padding-top: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
